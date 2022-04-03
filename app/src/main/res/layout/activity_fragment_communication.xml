@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegistrationFragment.FragmentCommunicationActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container1"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Registered | Signup here"
+        android:textSize="20dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginLeft="75dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered | Login here"
+        android:textSize="20dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="61dp"
+        />
+
+</RelativeLayout>
