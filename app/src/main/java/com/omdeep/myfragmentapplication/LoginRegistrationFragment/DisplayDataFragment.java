@@ -14,15 +14,17 @@ import com.omdeep.myfragmentapplication.databinding.FragmentDisplayDataBinding;
 
 
 public class DisplayDataFragment extends Fragment {
+    private FragmentDisplayDataBinding binding;
 
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        FragmentDisplayDataBinding binding = FragmentDisplayDataBinding.inflate(getLayoutInflater());
+        binding = FragmentDisplayDataBinding.inflate(getLayoutInflater());
         Bundle bundle = getArguments();
         binding.displayWelcome.setText(bundle.getString("input"));
+
         return binding.getRoot();
     }
 }

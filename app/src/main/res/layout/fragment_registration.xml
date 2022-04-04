@@ -26,7 +26,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/username"
+            android:id="@+id/layout_username"
             android:layout_below="@+id/login_frame"
             android:hint="Enter your username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -42,6 +42,7 @@
             android:orientation="vertical"
             >
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLength="20"
@@ -52,8 +53,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/password"
-            android:layout_below="@+id/username"
+            android:id="@+id/user_password"
+            android:layout_below="@+id/layout_username"
             android:hint="Enter your password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:counterEnabled="true"
@@ -68,6 +69,7 @@
             android:orientation="vertical"
             >
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLength="20"
@@ -76,8 +78,8 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/login"
-            android:layout_below="@+id/password"
+            android:id="@+id/register"
+            android:layout_below="@+id/user_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register"
