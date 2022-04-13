@@ -31,8 +31,9 @@ public class FragmentCommunicationActivity extends AppCompatActivity implements 
         binding.signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.loginUp.setVisibility(View.VISIBLE);
+//                binding.loginUp.setVisibility(View.VISIBLE);
                 binding.signUp.setVisibility(View.INVISIBLE);
+//                binding.register.setVisibility(View.VISIBLE);
                 Fragment fragment = new RegistrationFragment();
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -42,11 +43,24 @@ public class FragmentCommunicationActivity extends AppCompatActivity implements 
             }
         });
 
+//        binding.register.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                binding.register.setVisibility(View.INVISIBLE);
+//                Fragment fragment = new LoginSenderFragment();
+//                FragmentManager fragmentManager = getSupportFragmentManager();
+//                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                fragmentTransaction.replace(R.id.fragment_container1, fragment);
+//                fragmentTransaction.addToBackStack(null);
+//                fragmentTransaction.commit();
+//            }
+//        });
+
         binding.loginUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.loginUp.setVisibility(View.INVISIBLE);
-                binding.signUp.setVisibility(View.VISIBLE);
+//                binding.loginUp.setVisibility(View.INVISIBLE);
+//                binding.signUp.setVisibility(View.INVISIBLE);
                 Fragment fragment = new LoginSenderFragment();
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -58,7 +72,8 @@ public class FragmentCommunicationActivity extends AppCompatActivity implements 
         });
     }
     public void addFragment() {
-        binding.loginUp.setVisibility(View.INVISIBLE);
+//        binding.loginUp.setVisibility(View.INVISIBLE);
+        binding.signUp.setVisibility(View.VISIBLE);
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragment_container1, new LoginSenderFragment());

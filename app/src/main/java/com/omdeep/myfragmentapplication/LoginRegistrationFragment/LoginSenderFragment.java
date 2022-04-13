@@ -35,6 +35,7 @@ public class LoginSenderFragment extends Fragment {
         sharedPreferences = getContext().getSharedPreferences("user_info", MODE_PRIVATE);
         editor = sharedPreferences.edit();
 
+
         binding.login.setOnClickListener(view -> {
 
 

@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginRegistrationFragment.FragmentCommunicationActivity">
 
     <FrameLayout
@@ -13,24 +14,37 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/sign_up"
+        android:visibility="invisible"
         android:layout_below="@+id/fragment_container1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Not Registered | Signup here"
         android:textSize="20dp"
-
         android:layout_marginLeft="75dp"
         />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/login_up"
-        android:layout_below="@+id/fragment_container1"
+        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already Registered | Login here"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/fragment_container1"
         android:layout_marginLeft="61dp"
-        />
+        android:layout_marginTop="20dp"
+        android:text="Already Registered | Login here"
+        android:textSize="20dp" />
+
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/register"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="invisible"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginTop="470dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:text="Register"-->
+<!--        android:textSize="40dp"-->
+<!--        app:cornerRadius="20dp" />-->
 
 </RelativeLayout>

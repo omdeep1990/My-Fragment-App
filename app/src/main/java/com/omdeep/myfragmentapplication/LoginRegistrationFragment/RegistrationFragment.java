@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,10 +58,26 @@ public class RegistrationFragment extends Fragment {
                     editor.putString(Keys.PASS_WORD, password2);
                     editor.commit();
                     Utility.showLongToast(getContext(), "Registered Successfully...");
+                    replaceRegisFragToLoginFrag(new LoginSenderFragment());
+
+
                 }
 
             }
         });
         return binding.getRoot();
+    }
+
+    private void replaceRegisFragToLoginFrag(LoginSenderFragment loginFragment) {
+
+
+        // create a FragmentManager
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        // create a FragmentTransaction to begin the transaction and replace the Fragment
+        FragmentTransaction fragTransaction = fragmentManager.beginTransaction();
+        // replace the FrameLayout with new Fragment
+        fragTransaction.replace(R.id.fragment_container1, loginFragment);
+        // save the changes
+        fragTransaction.commit();
     }
 }

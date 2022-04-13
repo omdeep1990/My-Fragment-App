@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/drawable/rounded_btn.xml" value="0.128" />
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/activity_display_data_fragment.xml" value="0.2" />
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/activity_fragment2_fragment_comm.xml" value="0.1" />
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/activity_fragment_communication.xml" value="0.2" />
@@ -19,7 +20,7 @@
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/fragment_login.xml" value="0.25" />
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/fragment_login_sender.xml" value="0.25" />
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/fragment_mystatic_my.xml" value="0.2" />
-        <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/fragment_registration.xml" value="0.1859375" />
+        <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/fragment_registration.xml" value="0.2" />
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/fragment_second.xml" value="0.2" />
         <entry key="..\:/Users/Omdeep Singh/AndroidStudioProjects/MyFragmentApplication/app/src/main/res/layout/fragment_sender.xml" value="0.33" />
       </map>
